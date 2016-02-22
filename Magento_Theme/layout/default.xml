@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	 <update handle="default_head_blocks"/>
+	<body>
+		<referenceContainer name="header.container" remove="true"/>
+		<referenceBlock name="header.panel" remove="true" />
+		<referenceBlock name="top.links" remove="true" />
+		<referenceBlock name="catalog.topnav" remove="true" />
+		<referenceContainer name="page.top" remove="true" />
+		<referenceContainer name="page.bottom.container" remove="true" />
+		<referenceContainer name="after.body.start">
+			<block class="Magento\Framework\View\Element\Template" name="navigation" template="Magento_Theme::page/html/fb.phtml"></block>
+			<block class="Magento\Framework\View\Element\Template" name="navigation" template="Magento_Theme::page/html/navigation.phtml"></block>
+		</referenceContainer>
+		<referenceContainer name="main">
+			<container name="content" label="Main Content Area"/>
+		</referenceContainer>
+
+
+		<referenceContainer name="footer-container">
+			<referenceContainer name="footer" remove="true" />
+			<block class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/html/footer.phtml"/>
+		</referenceContainer>
+	</body>
+</page>
