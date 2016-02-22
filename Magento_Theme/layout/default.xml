@@ -9,7 +9,7 @@
 		<referenceContainer name="page.top" remove="true" />
 		<referenceContainer name="page.bottom.container" remove="true" />
 		<referenceContainer name="after.body.start">
-			<block class="Magento\Framework\View\Element\Template" name="navigation" template="Magento_Theme::page/html/fb.phtml"></block>
+			<block class="Magento\Framework\View\Element\Template" name="fb" template="Magento_Theme::page/html/fb.phtml"></block>
 			<block class="Magento\Framework\View\Element\Template" name="navigation" template="Magento_Theme::page/html/navigation.phtml"></block>
 		</referenceContainer>
 		<referenceContainer name="main">

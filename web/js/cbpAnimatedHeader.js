@@ -8,6 +8,7 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+
 jQuery(document).ready(function () {
 	var cbpAnimatedHeader = (function () {
 
@@ -28,9 +29,11 @@ jQuery(document).ready(function () {
 		function scrollPage() {
 			var sy = scrollY();
 			if (sy >= changeHeaderOn) {
-				classie.add(header, 'navbar-shrink');
+				//classie.add(header, 'navbar-shrink');
+				jQuery('.navbar-default').addClass('navbar-shrink');
 			} else {
-				classie.remove(header, 'navbar-shrink');
+				//classie.remove(header, 'navbar-shrink');
+				jQuery('.navbar-default').removeClass('navbar-shrink');
 			}
 			didScroll = false;
 		}
